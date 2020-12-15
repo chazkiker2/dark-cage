@@ -40,7 +40,7 @@ const SPassage = styled.div`
 			linear-gradient(#fff,#fff),
 			var(--pDarker);
 		background-position:center;
-		background-size: 90% 2px;
+		background-size: 100% 2px;
 		background-repeat:no-repeat;
 	}
 

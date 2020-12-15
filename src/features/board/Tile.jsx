@@ -29,7 +29,7 @@ const TileEnum = Object.freeze(
 const Tile = props => {
 	return (
 		<TileContainer>
-			<TPassage />
+			{props.children}
 		</TileContainer>
 	);
 

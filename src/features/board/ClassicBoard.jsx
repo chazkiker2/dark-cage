@@ -4,15 +4,21 @@ import styled from "styled-components";
 
 import StraightPassage from "./tiles/StraightPassage";
 import TPassage from "./tiles/TPassage";
+import FourPassage from "./tiles/FourPassage";
 
 const ClassicBoard = props => {
 	return (
 		<>
-			<h1>Classic Board</h1>
 			<SixBySixCage>
-				<TPassage />
-				<StraightPassage />
-				<Tile />
+				<Tile>
+					<TPassage />
+				</Tile>
+				<Tile>
+					<StraightPassage />
+				</Tile>
+				<Tile>
+					<FourPassage />
+				</Tile>
 				<Tile />
 				<Tile />
 				<Tile />

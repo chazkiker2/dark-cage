@@ -31,7 +31,7 @@ const STPassage = styled.span`
 	transform: ${props => `rotate(${props.rotation}deg)`};
 	transition: transform 0.2s ease-in-out;
 	.vertical {
-		height: 50%;
+		height: 89px;
 		width: 100%;
 		text-align: left;
 		overflow: hidden;
@@ -41,7 +41,7 @@ const STPassage = styled.span`
 		background-position:bottom;
 		position: relative;
 		z-index: 2;
-		background-size: 85% 2px;
+		background-size: 100% 2px;
 		background-repeat:no-repeat;
 	}
 	.sideways {
@@ -50,11 +50,13 @@ const STPassage = styled.span`
 		text-align: stretch;
 		transform: rotate(90deg);
 		display: inline-block;
-		width: 70%;
-		height: 100%;
+		/* width: 89px;
+		height: 100%; */
+		height: 89px;
+		width: 100%;
 		background: linear-gradient(#fff, #fff), var(--pDarker);
 		background-position: center;
-		background-size: 80% 2px;
+		background-size: 50% 2px;
 		background-repeat: no-repeat;
 		overflow: hidden;
 	}
