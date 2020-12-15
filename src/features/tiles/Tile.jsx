@@ -29,8 +29,6 @@ const TileSlot = styled.div`
 	border: 1px solid white;
 	height: 100%; 
 	width: 100%;
-	/* min-width: 18vmin;
-	min-height: 18vmin; */
 `;
 
 const TileContainer = styled.div`
