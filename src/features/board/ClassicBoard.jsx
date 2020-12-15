@@ -79,13 +79,6 @@ const SixBySixCage = styled.div`
 	grid-auto-flow: row;
 	justify-items: stretch;
 	gap: 0px 0px;
-	/* grid-template-areas:
-	". . . . . ."
-	". . . . . ."
-	". . . . . ."
-	". . . . . ."
-	". . . . . ."
-	". . . . . ."; */
 `;
 
 export default ClassicBoard;

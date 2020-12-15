@@ -1,14 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import FourPassage from "./FourPassage";
 
 const Gate = props => {
 	return (
 		<StyledGate>
 			<Circle>
-				{/* <svg height="100" width="100">
-					<circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
-				</svg> */}
 				<h1>G</h1>
 			</Circle>
 			<Grid>
@@ -17,7 +13,6 @@ const Gate = props => {
 				<span className="three" />
 				<span className="four" />
 			</Grid>
-
 		</StyledGate>
 	);
 }
@@ -41,7 +36,6 @@ const Circle = styled.div`
 		font-size: 4rem;
 		position: relative;
 	}
-	/* background-color: transparent; */
 `;
 
 const StyledGate = styled.div`
@@ -51,11 +45,9 @@ const StyledGate = styled.div`
 `;
 
 const Grid = styled.div`
-	/* position: relative; */
 	width: 100%; height: 100%;
 	display: grid;
 	overflow: hidden;
-	/* background-color: var(--pLighter); */
 	background-color: lightgoldenrodyellow;
 	gap: 4%;
 	overflow: hidden;

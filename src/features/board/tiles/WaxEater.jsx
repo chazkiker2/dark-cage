@@ -5,9 +5,6 @@ const WaxEater = props => {
 	return (
 		<StyledGate>
 			<Circle>
-				{/* <svg height="100" width="100">
-					<circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
-				</svg> */}
 				<h1>W</h1>
 			</Circle>
 			<Grid>
@@ -40,7 +37,6 @@ const Circle = styled.div`
 		font-size: 4rem;
 		position: relative;
 	}
-	/* background-color: transparent; */
 `;
 
 const StyledGate = styled.div`
@@ -51,11 +47,9 @@ const StyledGate = styled.div`
 `;
 
 const Grid = styled.div`
-	/* position: relative; */
 	width: 100%; height: 100%;
 	display: grid;
 	overflow: hidden;
-	/* background-color: var(--pLighter); */
 	background-color: red;
 	gap: 4%;
 	overflow: hidden;

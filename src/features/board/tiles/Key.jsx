@@ -5,19 +5,14 @@ const Key = props => {
 	return (
 		<StyledGate>
 			<Circle>
-				{/* <svg height="100" width="100">
-					<circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
-				</svg> */}
 				<h1>K</h1>
 			</Circle>
-
 			<Grid>
 				<span className="one" />
 				<span className="two" />
 				<span className="three" />
 				<span className="four" />
 			</Grid>
-
 		</StyledGate>
 	);
 }
@@ -28,7 +23,6 @@ const Circle = styled.div`
 	z-index: 1;
 	background-color: yellow;
 	transform: translate(50%, 50%) rotate(45deg);
-	/* border-radius: 2px; */
 	border: 0px;
 	display: flex;
 	flex-flow: column nowrap;
@@ -42,33 +36,6 @@ const Circle = styled.div`
 		background: none;
 		font-size: 4rem;
 		transform: rotate(-45deg);
-	}
-	/* background-color: transparent; */
-`;
-
-const Triangle = styled.div`
-	width: 0;
-  height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-top: 100px solid yellow;
-	position: absolute;
-	z-index: 1;
-	/* background-color: yellow; */
-	transform: translate(39%, 50%);
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	align-items: center;
-	h1 {
-		text-align: center;
-		position: relative;
-		transform: translate(10%, -150%);
-		color: black;
-		background-color: none;
-		background: none;
-		font-size: 4rem;
-		z-index: 2;
 	}
 `;
 
