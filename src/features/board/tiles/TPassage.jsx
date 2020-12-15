@@ -3,44 +3,36 @@ import styled from "styled-components";
 
 const TPassage = props => {
 	return (
-		<STPassage>
-			<span className="vertical" />
-			<span className="sideways" />
-		</STPassage>
-	);
+		<SGrid>
+			<div className="one" />
+			<div className="two" />
+			<div className="three" />
+		</SGrid>
+	)
 }
 
-const STPassage = styled.span`
-	height: 100%; width: 100%;
-	display: flex;
-	flex-flow: column nowrap;
-	.vertical {
-		height: 89px;
-		width: 100%;
-		text-align: left;
-		overflow: hidden;
-		background:
-			linear-gradient(#fff,#fff),
-			var(--pDarker);
-		background-position:bottom;
-		position: relative;
-		z-index: 2;
-		background-size: 100% 2px;
-		background-repeat:no-repeat;
+const SGrid = styled.div`
+	width: 100%; height: 100%;
+	display: grid;
+	overflow: hidden;
+	background-color: white;
+	gap: 4%;
+	overflow: hidden;
+	grid-template: 
+		[row1-start] "one two" 48% [row1-end]
+		[row2-start] "three three" 48% [row2-end]
+		/ auto;
+	div {
+		background-color: var(--pDarker);
 	}
-	.sideways {
-		position: relative;
-		z-index: 1;
-		text-align: stretch;
-		transform: rotate(90deg);
-		display: inline-block;
-		height: 89px;
-		width: 100%;
-		background: linear-gradient(#fff, #fff), var(--pDarker);
-		background-position: center;
-		background-size: 50% 2px;
-		background-repeat: no-repeat;
-		overflow: hidden;
+	.one {
+		grid-area: one;
+	}
+	.two {
+		grid-area: two;
+	}
+	.three {
+		grid-area: three;
 	}
 `;
 

@@ -6,6 +6,7 @@ import StraightPassage from "./tiles/StraightPassage";
 import TPassage from "./tiles/TPassage";
 import FourPassage from "./tiles/FourPassage";
 import Starting from "./tiles/Starting";
+import Gate from "./tiles/Gate";
 
 const ClassicBoard = props => {
 	return (
@@ -23,7 +24,9 @@ const ClassicBoard = props => {
 				<Tile>
 					<Starting />
 				</Tile>
-				<Tile />
+				<Tile>
+					<Gate />
+				</Tile>
 				<Tile />
 				<Tile />
 				<Tile />
@@ -67,6 +70,8 @@ const SixBySixCage = styled.div`
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-auto-flow: row;
+	justify-items: stretch;
 	gap: 0px 0px;
 	/* grid-template-areas:
 	". . . . . ."

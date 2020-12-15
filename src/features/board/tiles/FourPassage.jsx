@@ -3,27 +3,40 @@ import styled from "styled-components";
 
 const FourPassage = props => {
 	return (
-		<S4Passage>
-			<span />
-		</S4Passage>
+		<Grid>
+			<span className="one" />
+			<span className="two" />
+			<span className="three" />
+			<span className="four" />
+		</Grid>
 	)
 }
 
-const S4Passage = styled.div`
-	height: 100%; width: 100%;
+const Grid = styled.div`
+	width: 100%; height: 100%;
+	display: grid;
 	overflow: hidden;
+	background-color: white;
+	gap: 4%;
+	overflow: hidden;
+	grid-template: 
+		[row1-start] "one two" 48% [row1-end]
+		[row2-start] "three four" 48% [row2-end]
+		/ auto;
 	span {
-		height: 100%;
-		width: 100%;
-		text-align: center;
-		display:inline-block;
-		background:
-			linear-gradient(#fff,#fff),
-			linear-gradient(#fff,#fff),
-			var(--pDarker);
-		background-position:center;
-		background-size: 100% 2px,2px 100%;
-		background-repeat:no-repeat;
+		background-color: var(--pDarker);
+	}
+	.one {
+		grid-area: one;
+	}
+	.two {
+		grid-area: two;
+	}
+	.three {
+		grid-area: three;
+	}
+	.four {
+		grid-area: four;
 	}
 `;
 

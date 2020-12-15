@@ -3,34 +3,37 @@ import styled from "styled-components";
 
 const Starting = props => {
 	return (
-		<StartTile>
+		<Grid>
 			<span className="one" />
-			<span />
-		</StartTile>
-	)
+			<span className="two" />
+			<span className="three" />
+		</Grid>
+	);
 }
 
-const StartTile = styled.div`
-	height: 100%; width: 100%;
-	display: flex;
-	flex-flow: column nowrap;
+const Grid = styled.div`
+	width: 100%; height: 100%;
+	display: grid;
 	overflow: hidden;
+	background-color: white;
+	gap: 4%;
+	overflow: hidden;
+	grid-template: 
+		[row1-start] "one two" 48% [row1-end]
+		[row2-start] "one three" 48% [row2-end]
+		/ auto;
 	span {
-		display: inline-block;
-		height: 89px;
-		width: 100%;
-		background: linear-gradient(#fff, #fff), var(--pDarker);
-		background-size: 50% 2px;
-		background-repeat: no-repeat;
-		overflow: hidden;
-		&.one {
-			position: relative;
-			text-align: left;
-			transform: rotate(90deg);
-			background-position: center;
-			background-size: 50% 2px;
-			z-index: -1;
-		}
+		background-color: var(--pDarker);
+	}
+	.one {
+		grid-area: one;
+	}
+	.two {
+		grid-area: two;
+	}
+	.three {
+		grid-area: three;
+		margin-left: -10%;
 	}
 `;
 

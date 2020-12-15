@@ -3,26 +3,30 @@ import styled from "styled-components";
 
 const StraightPassage = props => {
 	return (
-		<SPassage>
-			<span />
-		</SPassage>
+		<SPassageGrid>
+			<span className="one" />
+			<span className="two" />
+		</SPassageGrid>
 	)
 }
 
-const SPassage = styled.div`
+const SPassageGrid = styled.div`
 	height: 100%; width: 100%;
 	overflow: hidden;
+	display: grid;
+	background-color: white;
+	gap: 4%;
+	grid-template:
+		[row1-start] "one" 48% [row1-end]
+		[row2-start] "two" 48% [row2-end] / auto;
 	span {
-		height: 100%;
-		width: 100%;
-		text-align: center;
-		display:inline-block;
-		background:
-			linear-gradient(#fff,#fff),
-			var(--pDarker);
-		background-position:center;
-		background-size: 100% 2px;
-		background-repeat:no-repeat;
+		background-color: var(--pDarker);
+	}
+	.one {
+		grid-area: one;
+	}
+	.two {
+		grid-area: two;
 	}
 `;
 
