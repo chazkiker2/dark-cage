@@ -5,6 +5,7 @@ import styled from "styled-components";
 import StraightPassage from "./tiles/StraightPassage";
 import TPassage from "./tiles/TPassage";
 import FourPassage from "./tiles/FourPassage";
+import Starting from "./tiles/Starting";
 
 const ClassicBoard = props => {
 	return (
@@ -19,7 +20,9 @@ const ClassicBoard = props => {
 				<Tile>
 					<FourPassage />
 				</Tile>
-				<Tile />
+				<Tile>
+					<Starting />
+				</Tile>
 				<Tile />
 				<Tile />
 				<Tile />
@@ -59,7 +62,8 @@ const ClassicBoard = props => {
 
 
 const SixBySixCage = styled.div`
-	display: grid;
+	width: 1080px;
+	height: 1080px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
