@@ -27,8 +27,10 @@ const TileSlot = styled.div`
 	align-items: center;
 	background-color: var(--pDarkest);
 	border: 1px solid white;
-	height: 180px; 
-	width: 180px;
+	height: 100%; 
+	width: 100%;
+	/* min-width: 18vmin;
+	min-height: 18vmin; */
 `;
 
 const TileContainer = styled.div`
