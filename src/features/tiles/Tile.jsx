@@ -39,6 +39,7 @@ const TileContainer = styled.div`
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
+	border: 1px solid white;
 	background: var(--pDarker);
 	transform: ${props => `rotate(${props.rotation}deg)`};
 	transition: transform 0.2s ease-in-out;

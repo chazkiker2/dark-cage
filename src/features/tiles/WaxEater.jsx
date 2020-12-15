@@ -13,7 +13,6 @@ const WaxEater = props => {
 				<span className="three" />
 				<span className="four" />
 			</Grid>
-
 		</StyledGate>
 	);
 }
