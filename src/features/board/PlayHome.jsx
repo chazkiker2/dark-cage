@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import Header from "../shared/Header";
+// import Header from "../shared/Header";
 import ClassicBoard from "./ClassicBoard";
 
 const PlayHome = props => {
 	return (
 		<>
-			<Header />
+			{/* <Header /> */}
 			<BoardContainer>
 				<ClassicBoard />
 			</BoardContainer>
