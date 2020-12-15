@@ -28,7 +28,7 @@ const Circle = styled.div`
 	z-index: 1;
 	background-color: lightgoldenrodyellow;
 	transform: translate(50%, 50%);
-	border-radius: 50%;
+	border-radius: 4px;
 	border: 0px;
 	display: flex;
 	flex-flow: column nowrap;
@@ -48,7 +48,6 @@ const StyledGate = styled.div`
 	width: 100%; height: 100%;
 	overflow: hidden;
 	text-align: center;
-	
 `;
 
 const Grid = styled.div`
@@ -57,7 +56,7 @@ const Grid = styled.div`
 	display: grid;
 	overflow: hidden;
 	/* background-color: var(--pLighter); */
-	background-color: #FFF;
+	background-color: lightgoldenrodyellow;
 	gap: 4%;
 	overflow: hidden;
 	grid-template: 

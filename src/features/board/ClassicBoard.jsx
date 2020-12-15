@@ -7,6 +7,8 @@ import TPassage from "./tiles/TPassage";
 import FourPassage from "./tiles/FourPassage";
 import Starting from "./tiles/Starting";
 import Gate from "./tiles/Gate";
+import WaxEater from "./tiles/WaxEater";
+import Key from "./tiles/Key";
 
 const ClassicBoard = props => {
 	return (
@@ -27,8 +29,12 @@ const ClassicBoard = props => {
 				<Tile>
 					<Gate />
 				</Tile>
-				<Tile />
-				<Tile />
+				<Tile>
+					<WaxEater />
+				</Tile>
+				<Tile>
+					<Key />
+				</Tile>
 				<Tile />
 				<Tile />
 				<Tile />
