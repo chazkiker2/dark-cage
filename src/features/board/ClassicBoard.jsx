@@ -5,14 +5,15 @@ import { Map, OrderedMap } from "immutable";
 import Tile from "../tiles/Tile";
 import StraightPassage from "../tiles/StraightPassage";
 import TPassage from "../tiles/TPassage";
-// import FourPassage from "../tiles/FourPassage";
-// import Starting from "../tiles/Starting";
-// import Gate from "../tiles/Gate";
-// import WaxEater from "../tiles/WaxEater";
-// import Key from "../tiles/Key";
+import FourPassage from "../tiles/FourPassage";
+import Starting from "../tiles/Starting";
+import Gate from "../tiles/Gate";
+import WaxEater from "../tiles/WaxEater";
+import Key from "../tiles/Key";
 
 
 let squaresMap = OrderedMap();
+
 for (let i = 0; i < 36; i++) {
 	squaresMap = squaresMap.set(i, null);
 }
@@ -39,8 +40,13 @@ const ClassicBoard = props => {
 	return (
 		<Page>
 			<div>
-				<button onClick={() => addTile(2, (<StraightPassage />))}>Add</button>
-				<button onClick={() => addTile(4, (<TPassage />))}>Add</button>
+				<button onClick={() => addTile(0, (<StraightPassage />))}>Straight</button>
+				<button onClick={() => addTile(1, (<TPassage />))}>T-Passage</button>
+				<button onClick={() => addTile(2, (<FourPassage />))}>4-Way</button>
+				<button onClick={() => addTile(3, (<Starting />))}>Start</button>
+				<button onClick={() => addTile(4, (<Gate />))}>Gate</button>
+				<button onClick={() => addTile(5, (<WaxEater />))}>WaxEater</button>
+				<button onClick={() => addTile(6, (<Key />))}>Key</button>
 			</div>
 			<SixBySixCage>
 				{
@@ -58,12 +64,15 @@ const Page = styled.div`
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
-	overflow-x: auto;
+	/* overflow-x: auto; */
+	overflow: hidden;
 `;
 
 
 const SixBySixCage = styled.div`
 	width: 96vw;
+	max-width: 900px;
+	max-height: 900px;
 	justify-content: center;
 	display: grid;
   grid-template-columns: repeat(6, minmax(16%, 1fr));

@@ -18,7 +18,6 @@ const Grid = styled.div`
 	overflow: hidden;
 	background-color: white;
 	gap: 4%;
-	overflow: hidden;
 	grid-template: 
 		[row1-start] "one two" 48% [row1-end]
 		[row2-start] "three four" 48% [row2-end]
