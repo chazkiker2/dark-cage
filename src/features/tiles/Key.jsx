@@ -50,7 +50,7 @@ const Grid = styled.div`
 	width: 100%; height: 100%;
 	display: grid;
 	overflow: hidden;
-	background-color: yellow;
+	background-color: gray;
 	gap: 4%;
 	overflow: hidden;
 	grid-template: 
@@ -58,7 +58,7 @@ const Grid = styled.div`
 		[row2-start] "three four" 48% [row2-end]
 		/ auto;
 	span {
-		background-color: var(--pDarker);
+		background-color: var(--pDark);
 	}
 	.one {
 		grid-area: one;

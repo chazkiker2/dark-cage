@@ -3,14 +3,16 @@ import styled from "styled-components";
 
 const Starting = props => {
 	return (
-		<Grid>
+		<StyledStart>
 			<Circle>
 				<h1>S</h1>
 			</Circle>
-			<span className="one" />
-			<span className="two" />
-			<span className="three" />
-		</Grid>
+			<Grid>
+				<span className="one" />
+				<span className="two" />
+				<span className="three" />
+			</Grid>
+		</StyledStart>
 	);
 }
 
@@ -26,6 +28,7 @@ const Circle = styled.div`
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
+	z-index: 1;
 	h1 {
 		color: black;
 		background-color: none;
@@ -36,10 +39,10 @@ const Circle = styled.div`
 `;
 
 const Grid = styled.div`
-	/* width: 100%; height: 100%; */
+	width: 100%; height: 100%;
 	display: grid;
 	overflow: hidden;
-	background-color: white;
+	background-color: gray;
 	gap: 4%;
 	overflow: hidden;
 	grid-template: 
@@ -47,7 +50,7 @@ const Grid = styled.div`
 		[row2-start] "one three" 48% [row2-end]
 		/ auto;
 	span {
-		background-color: var(--pDarker);
+		background-color: var(--pDark);
 	}
 	.one {
 		grid-area: one;
@@ -59,6 +62,12 @@ const Grid = styled.div`
 		grid-area: three;
 		margin-left: -10%;
 	}
+`;
+
+const StyledStart = styled.div`
+	width: 100%; height: 100%;
+	overflow: hidden;
+	text-align: center;
 `;
 
 export default Starting;
