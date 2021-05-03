@@ -1,3 +1,9 @@
+# Night Cage
+
+This codebase was transitioned to TypeScript. Please refer to the [TS React implementation](https://github.com/chazkiker2/night-cage) to see the more functional codebase.
+
+## Create React App Auto-Generated
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
